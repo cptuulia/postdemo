@@ -65,7 +65,7 @@
                 }
             }
         },
-        "title": "Post demo",
+        "title": "Post Demo",
         "intro": "In this demo you fill in a form and based on your data this application creates a pdf file and it would be sent as a paper letter to the given address. By a mail provider Pingen. Before sending you must pay it by an online payment.<br/> <br/>In this demo your data is not saved to our database and the payment is a demo and you don't have to pay anything.    ",
         "disclaimer": {
             "h1": "",
