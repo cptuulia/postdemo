@@ -52,6 +52,7 @@ class Pdf
 
     public static function delete(): void
     {
+        return;
         $file = self::$path . self::$fileName;
         if (is_file($file)) {
                 unlink(self::$path . self::$fileName);

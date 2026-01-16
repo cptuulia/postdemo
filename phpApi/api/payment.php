@@ -1,6 +1,7 @@
-<?
+<?php
+
 /**
- * payment API
+ * payment API2
  */
 
 require_once('api.php');

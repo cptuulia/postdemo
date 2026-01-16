@@ -30,16 +30,17 @@ class Mollie
 
         $redirectUrl = getenv('MOLLIE_REDIRECT_URL') . $locale . '/?section=step4&paymenttoken=' . $token;
 
-        /** @var Mollie\Api\Resources\CreatePaymentRequest $payment */
-        $createPaymentRequest = new CreatePaymentRequest(
-            $description,
-            new Money('EUR', $amount),
-            $redirectUrl,
-            getenv('MOLLIE_WEBHOOK_URL')
-        );
+        $params = [
+            "amount" => new Money('EUR', $amount),
 
+            "description" =>  $description,
+            "redirectUrl" =>  $redirectUrl,
+            "webhookUrl" => "https://webshop.example.org/payments/webhook/",
+            'method' => 'ideal'
+        ];
         /** @var \Mollie\Api\Resources\Payment $payment */
-        $payment = $mollie->send($createPaymentRequest);
+        $payment = $mollie->payments->create($params);
+
         return $payment->getCheckoutUrl();
     }
 

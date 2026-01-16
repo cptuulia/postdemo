@@ -49,18 +49,19 @@ body {
 header {
   margin: 0 0 50px 0;
   padding: 25px 30px;
-  background-image: url("/src/assets/img/logoWide.svg");
+ /* background-image: url("/src/assets/img/logoWide.svg");*/
   background-repeat: no-repeat;
-  background-size: 200px;
-  height: 440px;
+  background-size: 10px;
+  height: 50px;
   background-position: center bottom;
+  background-color: #bfd3f2;
 
   @media only screen and (min-width: $bpMedium) {
 
   }
 
   @media only screen and (min-width: $bpLarge) {
-    background-size: 400px;
+    background-size: 10px;
   }
 }
 
@@ -68,6 +69,7 @@ header {
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
+  margin-top: -60px;
 }
 
 .row {
@@ -233,4 +235,11 @@ h1.headline {
 
 .letter{
   font-size: 12px !important;
+}
+
+#headerImages {
+ 
+}
+#headerImages img {
+  height: 50px; margin-right: 20px;
 }

@@ -263,7 +263,7 @@ function App() {
       </div>
 
 
-      {/* ==============   Debug data ================ */}
+      {/* ==============   Debug data ================ 
       <div style={{ "fontFamily": "monospace" }}>
         CurrentSection: {currentSection} &nbsp;|&nbsp;
         Current step: {currentStep} <br />
@@ -297,6 +297,7 @@ function App() {
         hasPaid:{formData.hasPaid ? "true" : "false"} &nbsp;|&nbsp;
         paymentToken: {formData.paymentToken}
       </div>
+      */}
     </>
   )
 }

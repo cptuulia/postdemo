@@ -9,20 +9,20 @@ import { useState } from 'react';
 function Header(props) {
 
   return (
-    <><img src="/src/assets/img/tantonius.svg"/>Post Demo
+    <>
+   
+    <div id ="headerImages"> 
+         <img src='/src/assets/img/logoWide.svg'/>
+          <img src="/src/assets/img/tantonius.svg"/>
+    Post Demo 
+</div>
         {(props.currentSection).slice(0,5) == "step1" &&
             <div className="menu">
                 <div className="button" id="headerLanguageSelect"
                     onClick={(e) => props.emitChangeSection("selectCountry", e)}>
                     [[menu.locale]]
                 </div>
-                <div
-                    className="button"
-                    id="headerAbout"
-                    onClick={(e) => props.emitChangeSection("about", e)}
-                >
-                    [[menu.about]]
-                </div>
+
             </div>
         }
     </>

@@ -1,4 +1,4 @@
-<?
+<?php
 
 /**
  * pingen API
@@ -47,8 +47,8 @@ if (!empty($_POST)) {
 
     $file = Pdf::make($_POST);
   
-    Pingen::send($file, $_POST);
-    Mail::send($_POST, $file);
+  //  Pingen::send($file, $_POST);
+   // Mail::send($_POST, $file);
   } catch (Exception $e) {
     Pdf::delete();
     Response::send(

@@ -56,7 +56,8 @@ installModulesAndBuild()
 #
 deploy()
 {
-    
+    echo  ${FOLDER}/assets/*
+    exit
     echo "##########"
     echo "Clean up folder";
     ftp -n $HOST <<END_SCRIPT
@@ -129,7 +130,7 @@ for FOLDER in */  ; do
     echo "###########################################################################" 
     echo 
     cd $FOLDER
-    installModulesAndBuild
+   # installModulesAndBuild
     deploy
 
     cd .. 
