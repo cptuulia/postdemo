@@ -167,27 +167,7 @@ function Step3(props) {
                 placeholder="[[step3.form.senderEmail.placeholder]]"
                 validation={{ ...email_validation }}
               />
-              <Input
-                label="[[step3.form.senderBirthDate.label]]"
-                value={propsFormData.senderBirthDate}
-                type="date"
-                name="senderBirthDate"
-                value={props.formData.senderBirthDate}
-                handleChange={(e) => handleChange(e)}
-                placeholder="[[step3.form.senderBirthDate.placeholder]]"
-                validation={{ ...required_validation }}
-              />
-              <Input
-                label="[[step3.form.senderId.label]]"
-                value={propsFormData.senderId}
-                type="text"
-                name="senderId"
-                value={props.formData.senderId}
-                handleChange={(e) => handleChange(e)}
-                placeholder="[[step3.form.senderId.placeholder]]"
-                maxlength="4"
-                validation={{ ...required_validation }}
-              />
+            
             </div>{/*col*/}
           </div>{/*formRow*/}
         </form>

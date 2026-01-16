@@ -94,7 +94,7 @@ function RecipientSearch(props) {
      {showAjaxSpinner &&
           <AjaxSpinner/>
        }
-      <div style={{ "height": "200px", "width": "100%", "overflow": "auto" }} >
+      <div style={{ "height": "200px", "width": "100%", "overflow": "auto" ,  "font-size": "10px"}} >
         <table>
           <tbody>
             {Object.keys(searchResults).map((innerAttr, index) => {

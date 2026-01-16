@@ -5,7 +5,7 @@
     },
     "button": {
         "tellmemore": "Tell me more",
-        "OptMeOut": "OptMeOut",
+        "OptMeOut": "next",
         "readmore": {
             "less": "less",
             "more": "more"
@@ -21,11 +21,11 @@
             "button": "Select country"
         },
         "about": {
-            "title": "About",
+            "title": "Letter Provider",
             "0": {
-                "h": "I am am h1",
+                "h": "Pingen",
                 "p": {
-                    "0": "h1 p1 text",
+                    "0": "https://www.pingen.nl/",
                     "1": "h1 p2 text"
                 }
             },
@@ -48,35 +48,28 @@
     "step1": {
         "optout": {
             "3": {
-                "h": "I am opt me out am h1",
-                "readmore": "I am am readmore1",
+                "h": "Letter Provider Pingen",
+                "readmore": "Pingen",
                 "p": {
-                    "0": "h1 opt me out  p1 text",
-                    "1": "h1 opt me out  p2 text"
+                    "0": "The pdf files would be sent to a Dutch post provider Pingen(www.pingen.nl), which would send the letters.",
+                    "1": "In this demo you can download the generated pdf document."
                 }
             },
             "4": {
-                "h": "I am opt me out h2",
+                "h": "Mollie, payment platform",
                 "readmore": "I am am readmore2",
                 "p": {
-                    "0": "h2 opt me out  p1  text",
-                    "1": "h2 opt me out p2  text",
-                    "2": "h2 opt me out p3  text"
-                }
-            },
-            "5": {
-                "h": "I am opt me out  h3",
-                "readmore": "I am am readmore3",
-                "p": {
-                    "0": "h2 opt me out   text"
+                    "0": "The payments are done by the Mollie payment platform.",
+                    "1": "In the demo we use Ideal as a payment method.",
+                    "2": "Other options like credit card  are possible."
                 }
             }
         },
-        "title": "With European Health Data Space (EHDS) you will lose control over who can access your medical records.",
-        "intro": "Your data can be used by researchers, governments, and commercial companies. You can object to this with an <red>\u2018opt-out\u2019</red>, for the two ways your data can be used.",
+        "title": "Post demo",
+        "intro": "In this demo you fill in a form and based on your data this application creates a pdf file and it would be sent as a paper letter to the given address. By a mail provider Pingen. Before sending you must pay it by an online payment. In this demo your data is not saved to our database and the payment is a demo and you don't have to pay anything.    ",
         "disclaimer": {
             "h1": "Please note",
-            "p": "50 words Curabitur malesuada purus vel erat pharetra a placerat nibh facilisis. Phasellus gravida libero vitae nisi aliquam pharetra. Quisque dignissim justo sit amet odio consequat laoreet. Morbi blandit, nisi sit amet egestas ullamcorper, enim leo placerat sapien, eu egestas enim neque at mauris. Nulla facilisi. In non ligula. Nulla facilisi ligula."
+            "p": "t mauris. Nulla facilisi. In non ligula. Nulla facilisi ligula."
         }
     },
     "splash": {
@@ -115,12 +108,12 @@
         }
     },
     "step2": {
-        "title": "Select your GP",
-        "intro": "Who is your general practitioner? *",
+        "title": "Select the company",
+        "intro": "Type the name of the company or contact person to find it or fill in manually.",
         "form": {
             "recipientFirstName": {
-                "label": "What is the name of your GP?",
-                "placeholder": "last name of your GP"
+                "label": "Contact person first name",
+                "placeholder": "first name"
             },
             "recipientLastName": {
                 "placeholder": "last name",
@@ -160,7 +153,7 @@
     },
     "step3": {
         "title": "Your details",
-        "intro": "Your data is used for this process only stored only temporarily. See our <a onClick={openPrivacyPolicy} >privacy policy</a> for more info.",
+        "intro": "Your data is used for this process only stored only temporarily.",
         "form": {
             "senderFirstName": {
                 "label": "First name *",
@@ -280,7 +273,7 @@
         "contact2": "You can contact us with the e-mail mail@mail.com"
     },
     "opt-me-out-letter": {
-        "letter-subject": "OptOut for the European Health DataSpace (EHDS)",
+        "letter-subject": "Post Demo",
         "saluation": "Dear",
         "title": "Mr, Ms,",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel sem ex. Curabitur finibus augue purus, eget pharetra turpis convallis ac. Pellentesque efficitur elementum bibendum. Cras pretium risus eu rutrum dictum. Nam tristique sapien nulla, eu euismod enim vehicula in. Sed tempus dui finibus urna porttitor tempor. Proin nunc risus, aliquam in libero quis, accumsan feugiat arcu. Nam ut semper leo. Nulla facilisi. Maecenas commodo varius mauris, dignissim ullamcorper purus pellentesque quis. Etiam sit amet mi sit amet purus feugiat pretium.",

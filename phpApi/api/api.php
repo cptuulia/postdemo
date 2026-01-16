@@ -1,4 +1,4 @@
-<?
+<?php
 
 /**
  * index of the API

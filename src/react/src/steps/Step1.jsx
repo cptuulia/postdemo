@@ -132,7 +132,7 @@ function Step1(props) {
                   {data.data.readmore}
                 </div>
                 <div className='flex-end'>
-                  <ButtonMore readMore={readMore['selected'][data.index]} toggleReadMore ={() => { toggleReadMore(data.index) }} />
+               {/*   <ButtonMore readMore={readMore['selected'][data.index]} toggleReadMore ={() => { toggleReadMore(data.index) }} /> */}
                 </div>
               </div>
             </div>
