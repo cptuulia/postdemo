@@ -229,9 +229,33 @@ function Step4(props) {
                     <div className="button buttonOptMeOut"   disabled={disableNextStep} onClick={!disableNextStep ? (e) => onSubmit(): void(0)}>
                         [[button.send]]
                     </div>
+                     
                 </div>{/*col*/}
             </div>{/*row*/}
+                   <div className='row'>
+                <div className="col flex-center">
+                  [[step4.receiveACopy.mollie]]
 
+                 
+                    
+                </div>{/*col*/}
+            </div>{/*row*/}
+               <div className='row'>
+                <div className="col flex-center">
+                  [[step4.receiveACopy.title]]
+
+                 
+                      <img src='/src/assets/img/mollie1.png'  style={{ "height": "250px", "width": "300px", "overflow": "auto" ,  "font-size": "10px"}}/>
+                </div>{/*col*/}
+            </div>{/*row*/}
+                          <div className='row'>
+                <div className="col flex-center">
+                  [[step4.receiveACopy.text]]
+
+                 
+                      <img src='/src/assets/img/mollie2.png'  style={{ "height": "300px", "width": "300px", "overflow": "auto" ,  "font-size": "10px"}}/>
+                </div>{/*col*/}
+            </div>{/*row*/}
         </div>
 
     )

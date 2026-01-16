@@ -76,51 +76,12 @@ function Step5(props) {
             </div>
             <div className='row'>
               <div className="col col-8">
-                <p className="intro">[[step5.intro]] [[step4.letter.title]] 
-                  ObjectrecipientTitle
-                  ObjectrecipientFirstName 
-                  ObjectrecipientLastName</p>
+                <p className="intro">[[step5.intro]] 
+                </p>
               </div>
             </div>
 
-            <div className='row'>
-              <div className="col col-8">
-                <h3>[[step5.stayInformed.title]]</h3>
-                <p>[[step5.stayInformed.text]]</p>
-
-                <FormProvider {...methods}>
-                  <form
-                    onSubmit={e => e.preventDefault()}
-                    noValidate
-                    className="container"
-                  >
-                    <Input
-                      label=" "
-                      placeholder="[[step4.form.senderEmail.placeholder]]"
-                      value={props.formData.senderEmail}
-                      type="text"
-                      name="senderEmail"
-                      handleChange={(e) => handleChange(e)}
-                      validation={{
-                          ...(stayInformed == 'checked' ? email_validation : {})
-                        }}
-                    />
-
-                    <input
-                      type="checkbox"
-                      name="stayInformed"
-                      checked={stayInformed}
-                      onChange={handleCheckBoxClick}
-                    />
-                    <span>[[step5.form.stayInformed.label]]</span>
-                  </form>
-                </FormProvider>
-                 {isOnMailingList &&
-                  <div>[[step5.form.stayInformed.email_already_in_mailing_list]]</div>
-                 }
-              </div>
-            </div>
-
+          
             <div className='row'>
                 <div className="col flex-center">
                   <div className="button buttonOptMeOut" onClick={onSubmit}>

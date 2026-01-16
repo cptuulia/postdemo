@@ -4,7 +4,7 @@
         "locale": "EN"
     },
     "button": {
-        "tellmemore": "Tell me more",
+        "tellmemore": "Receive more",
         "OptMeOut": "next",
         "readmore": {
             "less": "less",
@@ -12,7 +12,7 @@
         },
         "back": "back",
         "send": "Send it",
-        "finish": "Finish"
+        "finish": "Download PDF"
     },
     "page": {
         "fallback": {
@@ -66,44 +66,20 @@
             }
         },
         "title": "Post demo",
-        "intro": "In this demo you fill in a form and based on your data this application creates a pdf file and it would be sent as a paper letter to the given address. By a mail provider Pingen. Before sending you must pay it by an online payment. In this demo your data is not saved to our database and the payment is a demo and you don't have to pay anything.    ",
+        "intro": "In this demo you fill in a form and based on your data this application creates a pdf file and it would be sent as a paper letter to the given address. By a mail provider Pingen. Before sending you must pay it by an online payment.<br/> <br/>In this demo your data is not saved to our database and the payment is a demo and you don't have to pay anything.    ",
         "disclaimer": {
-            "h1": "Please note",
-            "p": "t mauris. Nulla facilisi. In non ligula. Nulla facilisi ligula."
+            "h1": "",
+            "p": ""
         }
     },
     "splash": {
         "countries": {
-            "h1": "Select your country",
+            "h1": "Select language",
             "list": {
-                "1": "Austria,de_AT",
-                "2": "Belgium (NL),NL_BE",
-                "3": "Belgium (FR),fr_BE",
-                "4": "Bulgaria,bg_BG",
-                "5": "Croatia,hr_HR",
-                "6": "Cyprus,el_CY",
-                "7": "Czechia,cs_CZ",
-                "8": "Denmark,da_DK",
-                "9": "Estonia,et_EE",
-                "10": "Finland,fi_FI",
-                "11": "France,fr_FR",
-                "12": "Germany,de_DE",
-                "13": "Greece,el_GR",
-                "14": "Hungary,hu_HU",
-                "15": "Ireland,en_GB",
-                "16": "Italy,it_IT",
-                "17": "Latvia,lv_LV",
-                "18": "Lithuania,lt_LT",
-                "19": "Luxembourg,lb_LU",
-                "20": "Maltha,mt_MT",
-                "21": "Netherlands,nl_NL",
-                "22": "Poland,pl_PL",
-                "23": "Portugal,pt_PT",
-                "24": "Romania,ro_RO",
-                "25": "Slovakia,sk_SK",
-                "26": "Slovenia,sl_SI",
-                "27": "Spain,es_ES",
-                "28": "Sweden,sv_SE"
+               
+                "1": "Finnish,fi_FI",
+                "2": "English,en_GB",
+                "3": "Dutch,nl_NL"
             }
         }
     },
@@ -200,8 +176,9 @@
         "title": "Your Letter",
         "intro": "Below you see the letter to be sent.",
         "receiveACopy": {
-            "title": "Receive a copy",
-            "text": "You will receive instructions on how to reverse your opt-out."
+            "mollie" : "After clicking  the 'Send it' button, in this demo payment please follow the steps below.",
+            "title": "1) Select one arbitrary bank.",
+            "text": "2) Select one payment status open."
         },
         "form": {
             "senderEmail": {
@@ -243,15 +220,15 @@
         }
     },
     "step5": {
-        "title": "What happens now?",
-        "intro": "Your letter is processed by the Dutch company <red>Pingen</red>. They will deliver it to",
+        "title": "Thanks for trying the demo.",
+        "intro": "Your letter would be  processed by the Dutch company <red>Pingen</red>. <br/>  <br/>In this demo you can download the pfd file by the button below.",
         "stayInformed": {
             "title": "Stay informed",
             "text": "Stay informed (English) of legislative changes that might affect your opt-out."
         },
         "form": {
             "stayInformed": {
-                "label": "Yes, please",
+                "label": "",
                 "email_already_in_mailing_list": "This email is already on the list."
             }
         }

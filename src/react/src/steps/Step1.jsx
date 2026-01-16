@@ -143,7 +143,7 @@ function Step1(props) {
 
         return (
                 <div className="step" id="step1">
-
+    <img src='/src/assets/img/logoWide.svg'  style={{ "height": "200px", "width": "100%", "overflow": "auto" ,  "font-size": "10px"}}/>
                         {/* Headline & Intro */}
                         <div className='row mb-30'>
                           <div className="col col-10">
@@ -198,7 +198,7 @@ function Step1(props) {
                             </div>
                           </div>
                         }
-                        setOptOut :{setOptOut}
+                       
                 </div>
 
         )
