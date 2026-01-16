@@ -127,14 +127,14 @@ function Step4(props) {
                         <p>
                           {props.formData.recipientOrganization}<br />
                           {props.formData.recipientTitle != "" &&
-                            <>{props.formData.recipientTitle} <br /></>
+                            <>{props.formData.recipientTitle} </>
                           }
                           {props.formData.recipientFirstName != "" &&
-                            <>{props.formData.recipientFirstName} <br /></>
+                            <>{props.formData.recipientFirstName} </>
                           }
                           {props.formData.recipientLastName != "" &&
-                            <>{props.formData.recipientLastName} <br /></>
-                          }
+                            <>{props.formData.recipientLastName}</>
+                          }<br/>
                           {props.formData.recipientAddress1}<br />
                           {props.formData.recipientAddress2}<br />
                           {props.formData.recipientCity}<br />
@@ -146,14 +146,12 @@ function Step4(props) {
                         <p>
                         <strong>[[opt-me-out-letter.from]]</strong><br />
                         {props.formData.senderFirstName} {props.formData.senderLastName}<br />
-                        {props.formData.senderAddress1}<br />
+                        {props.formData.senderAddress1}&nbsp;
                         {props.formData.senderAddress2}<br />
                         {props.formData.senderCity}<br />
                         {props.formData.senderCountry}<br />
                       </p>
                         <p>
-                           [[opt-me-out-letter.senderBirthDate]] {props.formData.senderBirthDate}<br />
-                           [[opt-me-out-letter.senderId]]:  {props.formData.senderId}<br />
                            [[opt-me-out-letter.senderPhone]]:  {props.formData.senderPhone}<br />
                            [[opt-me-out-letter.senderEmail]]:  {props.formData.senderEmail}<br />
                         </p>
@@ -192,30 +190,7 @@ function Step4(props) {
                 </div>{/*col*/}
             </div>{/*row*/}
 
-            <div className='row'>
-                <div className="col-8">
-                    <h3>[[step4.receiveACopy.title]]</h3>
-                    <p className="mb-10">[[step4.receiveACopy.text]]</p>
-                    <FormProvider {...methods}>
-                      <form
-                        onSubmit={e => e.preventDefault()}
-                        noValidate
-                        className="container"
-                      >
-                        <Input
-                          label=" "
-                          placeholder="[[step4.form.senderEmail.placeholder]]"
-                          value={props.formData.senderReverseEmail}
-                          type="text"
-                          name="senderReverseEmail"
-                          handleChange={(e) => handleChange(e)}
-                          validation={{ ...email_validation }}
-                        />
-                      </form>
-                    </FormProvider>
-
-                </div>{/*col*/}
-            </div>{/*row*/}
+         
 
             <div className='row'>
                 <div className="col col-8">
@@ -224,24 +199,20 @@ function Step4(props) {
 
                   <div className="donate flex-center">
 
-                    <div className="donateOption" data-selected={paymentOption === 1 ? "true" : "false"}>
-                      <div className="button buttonDonate" onClick={(e) => selectDonation(1, e)}>&euro;0.01</div>
-                      <div className="donateLabel">[[step4.donate.paymentOptions.1]]</div>
-                    </div>
 
                     <div className="donateOption" data-selected={paymentOption === 2 ? "true" : "false"}>
                       <div className="button buttonDonate" onClick={(e) => selectDonation(2, e)}>&euro;2</div>
-                      <div className="donateLabel">[[step4.donate.paymentOptions.2]]</div>
+                    
                     </div>
 
                     <div className="donateOption" data-selected={paymentOption === 3 ? "true" : "false"}>
                       <div className="button buttonDonate" onClick={(e) => selectDonation(3, e)}>&euro;4</div>
-                      <div className="donateLabel">[[step4.donate.paymentOptions.3]]</div>
+                   
                     </div>
 
                     <div className="donateOption" data-selected={paymentOption === 4 ? "true" : "false"}>
                       <div className="button buttonDonate" onClick={(e) => selectDonation(4, e)}>&euro;10</div>
-                      <div className="donateLabel">[[step4.donate.paymentOptions.4]]</div>
+                     
                     </div>
                   </div>
 

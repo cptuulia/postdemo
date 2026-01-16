@@ -9,7 +9,7 @@ import { useState } from 'react';
 function Header(props) {
 
   return (
-    <>
+    <><img src="/src/assets/img/tantonius.svg"/>Post Demo
         {(props.currentSection).slice(0,5) == "step1" &&
             <div className="menu">
                 <div className="button" id="headerLanguageSelect"

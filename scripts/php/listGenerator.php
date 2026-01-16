@@ -271,9 +271,9 @@ class DemoContentService
     public function generate()
     {
         $content = "title;organization 1;name;surname;street;number;postal code;city;country\n";
-       for ($index=0; $index <2000; $index++) {
+       foreach ($this->companyNames as $companyName) {
           $title = 'Dhr';
-         $organization = $this->companyNames[rand(0, count($this->companyNames) - 1)];
+         $organization = $companyName;
           $firstName = $this->maleNames[rand(0, count($this->maleNames) - 1)];
           $lastName =$this->familyNames[rand(0, count($this->familyNames) - 1)];
           $street =  $this->streetNames[rand(0, count($this->streetNames) - 1)];
@@ -282,7 +282,7 @@ class DemoContentService
             $city = $this->cityNames[rand(0, count($this->cityNames) - 1)];
             $country = "The Netherlands";
         
-            $content =  $content . "$title;$organization;$firstName;$lastName;$street;$number;$postalCode;$city;$country\n";
+            $content =  $content . "$organization;$title;$firstName;$lastName;$street;$number;$postalCode;$city;$country\n";
 
        }
 

@@ -105,7 +105,7 @@ class HtmlGenerator:
                     '[[STEP_4_PRIVACY_POLICY]]': translateObj.multiple_paragraphs('privacy_policy.x'),
 
                     # update addresses list
-                    '[[ADDRESSES_LIST]]': self.addresses.get_address_list(lang),
+                    #[[ADDRESSES_LIST]]': self.addresses.get_address_list(lang),
 
                     # all translations as json string
                     '[[TRANSLATIONS_JSON_STR]]': translateObj.asJsonStr(overrides),

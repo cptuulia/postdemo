@@ -109,7 +109,7 @@
     },
     "step2": {
         "title": "Select the company",
-        "intro": "Type the name of the company or contact person to find it or fill in manually.",
+        "intro": "Type part of the name of the company or contact person to find it or fill in manually.<br/>Forexampe: Coca Cola, KLM, Aracadi<br/><br/>Note: this data is not real.",
         "form": {
             "recipientFirstName": {
                 "label": "Contact person first name",
@@ -197,8 +197,8 @@
         }
     },
     "step4": {
-        "title": "Your OptOut",
-        "intro": "Since there is no way to deliver this digitally (yet), we deliver by post. Proven technology.",
+        "title": "Your Letter",
+        "intro": "Below you see the letter to be sent.",
         "receiveACopy": {
             "title": "Receive a copy",
             "text": "You will receive instructions on how to reverse your opt-out."
@@ -209,13 +209,13 @@
             }
         },
         "donate": {
-            "title": "Donate",
-            "text": "We are an NGO and run non-profit. Please pay from an account that is in your name, since this is also used for identification. You can only OptYourselfOut.",
+            "title": "Payment",
+            "text": "Select amount",
             "paymentOptions": {
-                "1": "Feel free, if you can't afford more.",
-                "2": "Pay for your own.",
-                "3": "Pay it forward, donate a letter.",
-                "4": "Support this app. We work non-profit!"
+                "1": "",
+                "2": "",
+                "3": "",
+                "4": ""
             }
         }
     },

@@ -19,11 +19,16 @@ class Search
      ob_start();
      include($addresesFile);
      $json = ob_get_clean();
+   
      $jsonArr = json_decode($json, true);
+     
+ // echo('<pre>');
      $items = [];
      $searchFields = ['organization', 'name', 'name'];
      foreach($jsonArr as $item) {
+    // var_dump($item);
         $search = strtolower($item['organization'] . ' ' .  $item['name'] . ' ' . $item['surname'] );
+    //   var_dump($search);
         if (str_contains($search, strtolower($term))) {
           $items[] = $item;
         }

@@ -65,7 +65,7 @@ class AddressImport:
   #  
   #
   def __validate(self, row):
-
+    return True;
     valid = True
     # organization
     if(len(row[0]) > 40):

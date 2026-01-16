@@ -1,0 +1,3 @@
+HOST='ftp.example.com'
+USER='example'
+PASSWD='secret'

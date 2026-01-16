@@ -33,7 +33,7 @@ function RecipientSearch(props) {
 
   const searchByField = (e) => {
      let value = props.searchField
-      if (value.length > 3) {
+      if (value.length > 1) {
         searchByOrganizationName(value, props.locale);
         
       } else {
@@ -106,9 +106,7 @@ function RecipientSearch(props) {
                   style={{ "cursor": "pointer" }}
                   onClick={(e) => handleSelect(address)}
                 >
-                  <td>
-                    [[step2.recipient_search.select]]
-                  </td>
+                  
                   <td>{address.organization}</td>
                   <td>{address.title} {address.name} {address.surname}</td>
                   <td>{address.street}  {address.number}</td>
